@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Validator;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\projects;
@@ -74,7 +74,7 @@ class projectsController extends Controller
             $projects =  new projects;
 
             $projects->id=$request->id;
-            $projects->tags_id=$request->tags_id;
+            /*$projects->tags_id=$request->tags_id;
             $projects->subject_id=$request->subject_id;
             $projects->environment_id=$request->environment_id;
             $projects->resources_id=$request->resources_id;
@@ -93,7 +93,7 @@ class projectsController extends Controller
             $projects->completion=$request->completion;
             $projects->output=$request->output;
             $projects->costing=$request->costing;
-            $projects->future=$request->future;
+            $projects->future=$request->future;*/
 
             $projects->save();
 
